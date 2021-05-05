@@ -3,11 +3,26 @@
 
 <head>
 
-    <title>Scans</title>
+  <title>Scans</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    p {
+      display: none;
+    }
 
+    .observablehq {
+      display: inline-block;
+      margin: 5px;
+    }
+
+    #observablehq-2c3b5090 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
 
 
 </head>
@@ -15,13 +30,13 @@
 <body>
 
   <div id="observablehq-2c3b5090"></div>
-<p>Credit: <a href="https://observablehq.com/@bumbeishvili/scans">Scans by David  B.</a></p>
+  <p>Credit: <a href="https://observablehq.com/@bumbeishvili/scans">Scans by David B.</a></p>
 
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@bumbeishvili/scans.js?v=3";
-new Runtime().module(define, Inspector.into("#observablehq-2c3b5090"));
-</script>
+  <script type="module">
+    import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@bumbeishvili/scans.js?v=3";
+    new Runtime().module(define, Inspector.into("#observablehq-2c3b5090"));
+  </script>
 
 
 
